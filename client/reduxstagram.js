@@ -8,5 +8,13 @@ import css from  './styles/style.styl';
 
 //Import components
 import Main from './components/Main';
+import PhotoGrid from './components/PhotoGrid';
+import Single from './components/Single';
 
-render(<Main/>,document.querySelector('#root'));
+
+render((
+		<Main>
+			<PhotoGrid/>
+		</Main>
+	),
+document.querySelector('#root'));
